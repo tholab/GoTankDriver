@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ln_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/iv_histori"
+                        android:src="@mipmap/gotank300"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/hitam"/>
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:id="@+id/tvNamaHistori"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Tri Tholabul Ilmi"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        <View
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/hitam"/>
+                        <TextView
+                            android:id="@+id/tvAlamatHistori"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Ds.KedokanSayang"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        <View
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No.Hp"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/hitam"/>
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/tvNohpHistori"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="085642490759"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        <View
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/hitam"/>
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:id="@+id/tvStatusHistori"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="Sedang Dikerjakan"
+                            android:textColor="@color/status"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                        <View
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

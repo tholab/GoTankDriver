@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPemesan"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="8dp"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rl_maps"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:id="@id/rl_maps">
+                        <fragment
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:id="@+id/maps"/>
+
+                        <View
+                            android:id="@+id/customView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:onClick="btn_track"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/card_detail"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="12dp"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_maps"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/map"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvNamaDetailPemesan"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Tri Tholabul Ilmi"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvAlamatDetailPemesan"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Ds.Kedokan Sayang Rt 03/04 Kec. Tarub Kab.Tegal"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No.Hp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/hitam"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvHpDetailPemesan"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="085642490759"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/btn_acc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mulai Di Kerjakan"
+                        android:textColor="#fff"
+                        android:background="@drawable/btn_upload"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
